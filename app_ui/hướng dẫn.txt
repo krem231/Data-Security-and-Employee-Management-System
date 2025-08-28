@@ -1,0 +1,22 @@
+chạy file main để dùng mấy chức năng 
+
+chạy file server để dùng socket_server
+chạy run http để dùng http_server
+trong http thì thay host= localhost hoặc là ip trên máy. Cổng thì giữ nguyên là 8080
+để gửi file: 
+	chuẩn bị 1 file cỡ 10kb để gửi
+tạo db:
+CREATE DATABASE nhan_vien;
+CREATE TABLE tt_nv (
+    user_id VARCHAR(50) PRIMARY KEY,
+    ho_ten VARCHAR(100) NOT NULL,
+    phone_number VARCHAR(20),
+    phong_ban VARCHAR(50),
+    vai_tro VARCHAR(50),
+    email VARCHAR(100),
+    password VARCHAR(255),
+    token VARCHAR(255)
+);
+tạo 1 user có role là admin hoặc là manage để test file 
+
+
